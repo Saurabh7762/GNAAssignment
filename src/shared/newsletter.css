@@ -1,0 +1,37 @@
+.newsletter {
+    background: #13357c;
+    padding: 0;
+    margin-top: 3rem;
+    color: white;
+}
+.ri-file-list-3-line{
+    font-size: 4em;
+}
+.footer_text_signup{
+    font-size: small !important;
+}
+
+
+.newsletter__content {
+    padding: 35px 0;
+}
+
+
+.newsletter__input input {
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.newsletter__input input:focus {
+    outline: none;
+}
+
+.newsletter__btn {
+    padding: 0.5rem 1.5rem !important;
+    background: #3555d0 !important;
+    color: white !important;
+    font-size: 1.1rem !important;
+}

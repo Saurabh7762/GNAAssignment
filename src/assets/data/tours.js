@@ -1,0 +1,188 @@
+import tourImg01 from "../images/tour-img01.jpg";
+import tourImg02 from "../images/tour-img02.jpg";
+import tourImg03 from "../images/tour-img03.jpg";
+import tourImg04 from "../images/tour-img04.jpg";
+import tourImg05 from "../images/tour-img05.jpg";
+import tourImg06 from "../images/tour-img06.jpg";
+import tourImg07 from "../images/tour-img07.jpg";
+
+const tours = [
+  {
+    id: "01",
+    title: "Westminster Bridge",
+    city: "London",
+    distance: 300,
+    price: 300,
+    maxGroupSize: 10,
+    desc: "this is the description",
+    reviews: [
+      {
+        name: "John Doe",
+        rating: 4.6,
+      },
+    ],
+    avgRating: 4.5,
+    photo: tourImg01,
+    featured: true,
+    categoryType: "Tours",
+    cancellationPolicy: "Free Cancellation",
+    duration: "1 hour",
+    languages: ["English", "Spanish"],
+  },
+  {
+    id: "02",
+    title: "Bali, Indonesia",
+    city: "Indonesia",
+    distance: 400,
+    price: 909,
+    maxGroupSize: 8,
+    desc: "this is the description",
+    reviews: [
+      {
+        name: "John Doe",
+        rating: 4.6,
+      },
+    ],
+    avgRating: 4.5,
+    photo: tourImg02,
+    featured: true,
+    categoryType: "Outdoor Activities",
+    cancellationPolicy: "Cancellation Fee Apply",
+    duration: "4 hours",
+    languages: ["English", "French"],
+  },
+  {
+    id: "03",
+    title: "Snowy Mountains, Thailand",
+    city: "Thailand",
+    distance: 500,
+    price: 99,
+    maxGroupSize: 8,
+    desc: "this is the description",
+    reviews: [
+      {
+        name: "John Doe",
+        rating: 4.6,
+      },
+    ],
+    avgRating: 4.5,
+    photo: tourImg03,
+    featured: true,
+    categoryType: "Attractions",
+    cancellationPolicy: "Free Cancellation",
+    duration: "1 day",
+    languages: ["English", "Turkish"],
+  },
+  {
+    id: "04",
+    title: "Beautiful Sunrise, Thailand",
+    city: "Thailand",
+    distance: 500,
+    price: 99,
+    maxGroupSize: 8,
+    desc: "this is the description",
+    reviews: [
+      {
+        name: "John Doe",
+        rating: 4.6,
+      },
+    ],
+    avgRating: 4.5,
+    photo: tourImg04,
+    featured: true,
+    categoryType: "Day Trips",
+    cancellationPolicy: "Cancellation Fee Apply",
+    duration: "4 hours",
+    languages: ["English", "Spanish"],
+  },
+  {
+    id: "05",
+    title: "Nusa Pendia Bali, Indonesia",
+    city: "Indonesia",
+    distance: 500,
+    price: 99,
+    maxGroupSize: 8,
+    desc: "this is the description",
+    reviews: [
+      {
+        name: "John Doe",
+        rating: 4.6,
+      },
+    ],
+    avgRating: 4.5,
+    photo: tourImg05,
+    featured: false,
+    categoryType: "Concerts & Shows",
+    cancellationPolicy: "Free Cancellation",
+    duration: "1 day",
+    languages: ["English", "French", "Turkish"],
+  },
+  {
+    id: "06",
+    title: "Cherry Blossoms Spring",
+    city: "Japan",
+    distance: 500,
+    price: 99,
+    maxGroupSize: 8,
+    desc: "this is the description",
+    reviews: [
+      {
+        name: "John Doe",
+        rating: 4.6,
+      },
+    ],
+    avgRating: 4.5,
+    photo: tourImg06,
+    featured: false,
+    categoryType: "Tours",
+    cancellationPolicy: "Cancellation Fee Apply",
+    duration: "4 hours",
+    languages: ["English", "Spanish"],
+  },
+  {
+    id: "07",
+    title: "Holmen Lofoten",
+    city: "France",
+    distance: 500,
+    price: 99,
+    maxGroupSize: 8,
+    desc: "this is the description",
+    reviews: [
+      {
+        name: "John Doe",
+        rating: 4.6,
+      },
+    ],
+    avgRating: 4.5,
+    photo: tourImg07,
+    featured: false,
+    categoryType: "Outdoor Activities",
+    cancellationPolicy: "Free Cancellation",
+    duration: "1 hour",
+    languages: ["English", "Turkish"],
+  },
+  {
+    id: "08",
+    title: "Snowy Mountains, Thailand",
+    city: "Thailand",
+    distance: 500,
+    price: 99,
+    maxGroupSize: 8,
+    desc: "this is the description",
+    reviews: [
+      {
+        name: "John Doe",
+        rating: 4.6,
+      },
+    ],
+    avgRating: 4.5,
+    photo: tourImg03,
+    featured: false,
+    categoryType: "Attractions",
+    cancellationPolicy: "Cancellation Fee Apply",
+    duration: "1 day",
+    languages: ["English", "French", "Turkish"],
+  },
+];
+
+export default tours;
