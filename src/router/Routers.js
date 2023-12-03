@@ -11,7 +11,7 @@ import Destinations from "../pages/Destinations";
 const Routers = () => {
   return (
     <Routes>
-      <Route path="/" element={<Navigate to="/categories" />} />
+      <Route path="/" element={<Navigate to="/home" />} />
       <Route path="/home" element={<Home />} />
       <Route path="/categories" element={<Categories />} />
       <Route path="/blog" element={<Blog />} />
