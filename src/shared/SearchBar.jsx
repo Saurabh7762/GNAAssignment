@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import "./search-bar.css";
 import { Col, Form, FormGroup } from "reactstrap";
 
@@ -33,6 +33,17 @@ const SearchBar = ({ onSearch }) => {
     }
   };
 
+  const handleStartDateChange = () => {
+    const startDateValue = startDateRef.current.value;
+    endDateRef.current.min = startDateValue;
+  };
+  useEffect(() => {
+    const currentDate = new Date().toISOString().split("T")[0];
+    startDateRef.current.min = currentDate;
+  }, []);
+
+
+
   return (
     <Col lg="12" className="d-flex justify-content-center">
       <div className="search__bar">
@@ -64,10 +75,10 @@ const SearchBar = ({ onSearch }) => {
                   type="Date"
                   placeholder="Distance k/m"
                   ref={startDateRef}
+                  onChange={handleStartDateChange}
                 />
                 <div>-</div>
-                <input type="Date" ref={endDateRef} 
-                />
+                <input type="Date" ref={endDateRef} />
               </div>
             </div>
           </FormGroup>
@@ -77,8 +88,7 @@ const SearchBar = ({ onSearch }) => {
             </span>
             <div>
               <h6 className="text-start">Max People</h6>
-              <input type="number" placeholder="0" ref={maxGroupSizeRef}
-               />
+              <input type="number" placeholder="0" ref={maxGroupSizeRef} />
             </div>
           </FormGroup>
           <span className="search__icon" type="submit" onClick={searchHandler}>

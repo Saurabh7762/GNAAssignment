@@ -217,6 +217,8 @@ const handleNextPage = () => {
   setCurrentPage(currentPage + 1);
 };
 
+
+
   return (
     <>
       <div className="searchbar__field">
